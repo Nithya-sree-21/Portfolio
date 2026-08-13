@@ -459,35 +459,418 @@ footer{
     border-top: #D8CBA8 solid 1px;
 }
 
-@media (max-width: 1000px){
-    .project-grid{
+
+@media (max-width: 1000px) {
+
+    header nav {
+        padding: 15px 30px;
+    }
+
+    header nav div {
+        margin-left: 0;
+    }
+
+    header nav ul {
+        margin-right: 0;
+        gap: 5px;
+    }
+
+    header nav a {
+        padding: 10px;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .About {
+        padding: 30px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .image img {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .summary {
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding-top: 20px;
+    }
+
+    .skills {
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .skills div {
+        width: 300px;
+    }
+
+    .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .cert-page-grid{
+
+    .cert-page-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .cert-page{
-        padding-left:40px;
-        padding-right:40px;
+
+    .projects,
+    .resume,
+    .contact {
+        padding-left: 40px;
+        padding-right: 40px;
     }
-    .projects, .certificates, .resume, .contact{
-        padding-left:40px;
-        padding-right:40px;
+
+    .cert-page {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
-@media (max-width: 650px){
-    .project-grid{
+
+
+
+
+@media (max-width: 650px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        padding: 20px 10px;
+    }
+
+    header nav div {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    header nav div h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 5px;
+    }
+
+    header nav li {
+        margin: 0;
+    }
+
+    header nav a {
+        display: block;
+        padding: 8px 7px;
+        margin: 0;
+        font-size: 13px;
+    }
+
+    header nav a::after {
+        left: 7px;
+    }
+
+    a:hover::after {
+        width: calc(100% - 14px);
+    }
+
+
+
+    .About {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 200px;
+        height: 200px;
+        padding: 8px;
+        margin: 20px auto;
+        object-fit: cover;
+    }
+
+    .summary {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding-top: 10px;
+    }
+
+    .summary h2 {
+        font-size: 24px;
+    }
+
+    .summary h1 {
+        font-size: 27px;
+        margin: 10px 0;
+    }
+
+    .summary p {
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+
+ 
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+
+   
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .skills div {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 300px;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .skills h2 {
+        font-size: 20px;
+    }
+
+    .skills li {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+
+  
+
+    .projects {
+        padding: 40px 20px 70px;
+    }
+
+    .project-grid {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
     }
-    .cert-page-grid{
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-img {
+        height: 190px;
+    }
+
+    .project-info {
+        padding: 18px;
+    }
+
+    .project-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+
+ 
+    .cert-page {
+        width: 100%;
+        padding: 40px 20px 70px;
+    }
+
+    .section-sub {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .cert-page-grid {
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    header nav ul{
-        margin-right:20px;
-        flex-wrap:wrap;
-        gap:5px;
+
+    .cert-page-card {
+        width: 100%;
     }
-    header nav div{
-        margin-left:20px;
+
+    .cert-thumb {
+        height: 200px;
     }
+
+    .cert-page-info {
+        padding: 16px;
+    }
+
+    .cert-page-info h3 {
+        font-size: 1rem;
+    }
+
+
+   
+
+    .resume {
+        padding: 50px 20px 70px;
+    }
+
+    .resume p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn-download {
+        padding: 13px 25px;
+        font-size: 14px;
+    }
+
+
+
+
+    .contact {
+        padding: 40px 20px 70px;
+    }
+
+    .contact p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .contact-item {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+
+
+    footer {
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+
+
+ 
+
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox img {
+        max-width: 95%;
+        max-height: 80%;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 20px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    header nav div h2 {
+        font-size: 19px;
+    }
+
+    header nav a {
+        font-size: 11px;
+        padding: 6px 5px;
+    }
+
+    .image img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .summary h2 {
+        font-size: 21px;
+    }
+
+    .summary h1 {
+        font-size: 24px;
+    }
+
+    .summary p {
+        font-size: 14px;
+    }
+
+    .skills {
+        padding: 15px;
+    }
+
+    .skills div {
+        min-height: 280px;
+    }
+
+    .skills li {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .projects,
+    .cert-page,
+    .resume,
+    .contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
 }
